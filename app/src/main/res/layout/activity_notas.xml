@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notas"
+    android:orientation="vertical"
+    android:background="#373737"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+    >
+        <TextView
+            android:id="@+id/tltWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+
+            android:textSize="30dp"
+            android:fontFamily="@font/hot_rod"
+            android:textColor="#FEB822"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tltUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tltWelcome"
+            android:fontFamily="@font/hot_rod"
+            android:padding="15dp"
+            android:text="Santiago"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:onClick="NuevaCalificacion"
+            android:id="@+id/btnModificar"
+            android:visibility="visible"
+            />
+        <Button
+            android:layout_toRightOf="@+id/btnModificar"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Credenciales"
+            android:onClick="irEditar"
+            android:id="@+id/btnEditarCredenciales"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstNotas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

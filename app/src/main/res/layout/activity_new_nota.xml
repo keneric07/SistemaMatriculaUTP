@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_nota"
+    android:orientation="vertical"
+    android:background="#373737"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Calificacion"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/hot_rod"
+        android:textColor="#FEB822"
+        android:padding="15dp"
+
+        />
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="-Semestre-"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtSemestreRegi"
+
+        />
+
+    <Spinner
+
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        android:id="@+id/spMaterias"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+
+    <Spinner
+
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColorHint="#9A9A9A"
+        android:id="@+id/spnNotas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        />
+
+    <EditText
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="-Cedula del Estudiante-"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtcedulaEsRe"
+
+        />
+
+
+    <Button
+        android:fontFamily="@font/victorpro"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="NuevaCalificacion"
+        android:text="Agregar"
+        android:layout_gravity="center"/>
+
+
+
+
+
+</LinearLayout>

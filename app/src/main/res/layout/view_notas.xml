@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#373737">
+
+    <ImageView
+        android:id="@+id/imgMateria"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/materia_img"
+        android:layout_marginLeft="15dp" />
+
+    <LinearLayout
+        android:id="@+id/restauranteInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/imgMateria"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="167dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/victorpro"
+                android:textColorHint="#9A9A9A"
+                android:id="@+id/txtMateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materia"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="12dp"
+            android:fontFamily="@font/victorpro"
+            android:id="@+id/txtSemestre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semestre I"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imgNota"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="7dp"
+            android:background="#303030"
+            android:hint="0"
+            android:padding="18dp"
+
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:fontFamily="@font/victorpro"
+            android:id="@+id/txtCalificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="80dp"
+            android:background="#000FFF"
+            android:hint="A"
+            android:padding="18dp"
+
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

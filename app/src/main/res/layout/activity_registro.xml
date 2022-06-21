@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro"
+    android:orientation="vertical"
+    android:background="#373737">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+
+            android:id="@+id/tituloRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hot_rod"
+            android:padding="15dp"
+            android:text="REGISTRAR NUEVO"
+            android:textColor="#FEB822"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tituoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tituloRegistro"
+            android:fontFamily="@font/hot_rod"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="USUARIO"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/icono"
+        />
+
+    <EditText
+android:layout_marginTop="2dp"
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmailRegistro"
+        android:textColor="#FFFFFF"
+        android:hint="-E-mail-"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPasswordRegistro"
+        android:hint="-Contraseña-"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:inputType="textPassword"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserRegistro"
+        android:hint="-User-"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="18dp"
+
+        android:gravity="center_horizontal" />
+    <EditText
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCedulaRegistro"
+        android:hint="-Cedula-"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="18dp"
+
+        android:gravity="center_horizontal" />
+    <RadioGroup
+        android:id="@+id/RadioTipoRegistro"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp">
+        <RadioButton
+            android:fontFamily="@font/victorpro"
+            android:textColorHint="#9A9A9A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RaMaestroRegistro"
+            android:text="Maestro"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+
+            />
+        <RadioButton
+            android:fontFamily="@font/victorpro"
+            android:textColorHint="#9A9A9A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RaEstudianteRegistro"
+            android:text="Estudiante"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+
+            />
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:backgroundTint="#FEB822"
+        android:textColor="@color/black"
+        android:onClick="RegistrarUsuario"
+        android:fontFamily="@font/victorpro"
+        android:textColorHint="#9A9A9A"
+        />
+
+</LinearLayout>
